@@ -1,6 +1,86 @@
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    font-family: Roboto, sans-serif; /* tenho de ver na net como buscar Roboto */
+    color: white;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.hero {
+    display: flex;
+    background-color: #1f2937;
+}
+
+.left-empty-container,
+.right-empty-container {
+    width: 15vw;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.header {
+    display: flex;
+    font-size: 24px;
+    color: #f9faf8;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 12px;
+}
+
+a,
+.main-text.subtext {
+    font-size: 18px;
+    color: #e5e7eb;
+    text-decoration: none;
+}
+
+ul.header-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    height: 300px;
     align-items: center;
-    height: 200px;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.img-placeholder {
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+}
+
+.main-text.title {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900; 
+}
+
+button {
+    color: white;
+    background-color: #3882f6;
+    align-self: flex-start;
+    width: 90px;
+    padding: 5px;
+    border-radius: 7px;
 }
