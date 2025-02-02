@@ -1,10 +1,8 @@
-html {
-    /* width: 1440px;
-    height: 1912px;  */
-    /* é o tamanho da imagem que se pretende imitar */
-}
-
 body {
+    /* tamanho da imagem que se pretende imitar */
+    width: 1440px;
+    height: 1912px;
+    
     display: flex;
     flex-direction: column;
     font-family: Roboto, sans-serif; /* tenho de ver na net como buscar Roboto */
@@ -14,6 +12,7 @@ body {
 }
 
 .hero {
+    flex: 3;
     display: flex;
     background-color: #1f2937;
     padding-bottom: 50px;
@@ -96,6 +95,7 @@ button {
 }
 
 .info {
+    flex: 4;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -139,6 +139,7 @@ button {
 }
 
 .quote {
+    flex: 4;
     background-color: #e5e7eb;
     display: flex;
     flex-direction: column;
@@ -146,11 +147,7 @@ button {
     gap: 10px;
     height: 300px;
     color: #1f2937;
-    padding-left: 250px;
-    padding-right: 250px;
-    padding-top: 35px;
-    padding-bottom: 15px;
-    
+    padding: 35px 250px 15px;
 }
 
 .quote .text {
@@ -166,10 +163,10 @@ button {
 }
 
 .sign-up {
+    flex: 1;
     background-color: #3882f6;
     color: white;
     margin: 50px 200px;
-    padding: 40px;
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
@@ -195,4 +192,12 @@ p.title {
 p {
     padding: 0;
     margin: 0;
+}
+
+.footer {
+    background-color: #1f2937;
+    color: white;
+    font-size: smaller;
+    text-align: center;
+    padding: 25px;
 }
